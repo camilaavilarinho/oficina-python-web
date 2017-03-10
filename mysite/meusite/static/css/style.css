@@ -1,0 +1,21 @@
+.header{
+    background-color: #1abc9c;
+    color: #ffffff;
+}
+.sobre {
+    background-color: #474e5d;
+    color: #ffffff;
+}
+.contato {
+    background-color: #ffffff;
+    color: #555555;
+}
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+a{
+  color: #1abc9c;
+  margin: 15px;
+  font-size: 20px;
+}

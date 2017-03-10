@@ -1,3 +1,36 @@
-<html>
-    <p>Olá mundo! Você está no index do seu site.</p>
-</html>
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ola's site</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <script src="https://use.fontawesome.com/ba83dc1512.js"></script>
+</head>
+<body>
+  <header class="container-fluid header text-center">
+    <img src="{% static 'img/ada.jpeg' %}" class="img-circle" alt="Ada">
+    <h1>Ada Lovelace</h1>
+    <h3>Matemática - Escritora - Programadora</h3>
+  </header>
+
+  <section class="container-fluid sobre text-center">
+    <h3>Sobre</h3>
+    <p>Foi uma matemática e escritora inglesa.</p>
+    <p>Hoje é reconhecida principalmente por ter escrito o primeiro algoritmo <br> para ser processado por uma máquina, a máquina analítica de Charles Babbage.</p>
+  </section>
+
+  <section class="container-fluid contato text-center">
+    <h3>Onde encontrar?</h3>
+    <div class="container-fluid">
+      <a href="#"><i class="fa fa-envelope-o fa-2x"></i></a>
+      <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+      <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+    </div>
+
+  </section>
+
+</body></html>
