@@ -1,5 +1,4 @@
-from django.http import HttpResponse
-
+from django.shortcuts import render
 
 def index(request):
-    return HttpResponse("Olá mundo! Você está no index do seu site.")
+    return render(request, 'meusite/index.html', {})
